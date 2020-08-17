@@ -34,7 +34,11 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+<<<<<<< HEAD
         applicationId "com.aayussraut.flash_chat"
+=======
+        applicationId "co.appbrewery.flash_chat"
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
         minSdkVersion 16
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
@@ -57,7 +61,11 @@ flutter {
 
 dependencies {
     implementation 'androidx.multidex:multidex:2.0.0'
+<<<<<<< HEAD
     implementation 'com.google.firebase:firebase-analytics:17.2.2'
 }
 apply plugin: 'com.google.gms.google-services'
 
+=======
+}
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629

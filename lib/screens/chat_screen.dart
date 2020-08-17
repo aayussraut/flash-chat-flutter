@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flash_chat/constants.dart';
+<<<<<<< HEAD
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -8,11 +9,16 @@ FirebaseUser loggedInUser;
 
 class ChatScreen extends StatefulWidget {
   static const String id = 'chat_screen';
+=======
+
+class ChatScreen extends StatefulWidget {
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
   @override
   _ChatScreenState createState() => _ChatScreenState();
 }
 
 class _ChatScreenState extends State<ChatScreen> {
+<<<<<<< HEAD
   final messageController = TextEditingController();
   @override
   void initState() {
@@ -56,14 +62,23 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+=======
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
       appBar: AppBar(
         leading: null,
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.close),
               onPressed: () {
+<<<<<<< HEAD
                 _auth.signOut();
                 Navigator.pop(context);
+=======
+                //Implement logout functionality
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
               }),
         ],
         title: Text('⚡️Chat'),
@@ -74,7 +89,10 @@ class _ChatScreenState extends State<ChatScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+<<<<<<< HEAD
             MessageStream(),
+=======
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
             Container(
               decoration: kMessageContainerDecoration,
               child: Row(
@@ -82,19 +100,28 @@ class _ChatScreenState extends State<ChatScreen> {
                 children: <Widget>[
                   Expanded(
                     child: TextField(
+<<<<<<< HEAD
                       controller: messageController,
                       onChanged: (value) {
                         messageText = value;
+=======
+                      onChanged: (value) {
+                        //Do something with the user input.
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
                       },
                       decoration: kMessageTextFieldDecoration,
                     ),
                   ),
                   FlatButton(
                     onPressed: () {
+<<<<<<< HEAD
                       messageController.clear();
                       //Implement send functionality.
                       _firestore.collection('messages').add(
                           {'text': messageText, 'sender': loggedInUser.email});
+=======
+                      //Implement send functionality.
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
                     },
                     child: Text(
                       'Send',
@@ -110,6 +137,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 }
+<<<<<<< HEAD
 
 class MessageBubble extends StatelessWidget {
   MessageBubble({this.text, this.sender, this.isMe});
@@ -192,3 +220,5 @@ class MessageStream extends StatelessWidget {
         });
   }
 }
+=======
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629

@@ -6,7 +6,10 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
+<<<<<<< HEAD
         classpath 'com.google.gms:google-services:4.3.3'
+=======
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
     }
 }
 

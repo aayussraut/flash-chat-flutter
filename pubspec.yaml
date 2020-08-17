@@ -11,11 +11,14 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^0.1.2
+<<<<<<< HEAD
   animated_text_kit: ^2.2.0
   firebase_core: ^0.4.5
   firebase_auth: ^0.16.1
   cloud_firestore: ^0.13.7
   modal_progress_hud: ^0.1.3
+=======
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
 
 dev_dependencies:
   flutter_test:

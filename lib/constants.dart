@@ -17,6 +17,7 @@ const kMessageContainerDecoration = BoxDecoration(
     top: BorderSide(color: Colors.lightBlueAccent, width: 2.0),
   ),
 );
+<<<<<<< HEAD
 
 const kInputDecoration = InputDecoration(
   hintText: 'Enter a value',
@@ -34,3 +35,5 @@ const kInputDecoration = InputDecoration(
     borderRadius: BorderRadius.all(Radius.circular(32.0)),
   ),
 );
+=======
+>>>>>>> 53b2d50a03d9901e92afed06fdb76bee6e348629
